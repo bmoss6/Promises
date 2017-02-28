@@ -83,23 +83,25 @@ function resolvedPath(_dirname, filename)
 
 function readDirFiles(dirpath)
 {
-	const fs = require ('fs');
 	
-	var promise = new Promise(function(resolve,reject)
+	var filecontents;
+	var filesarray = readDir(dirpath);
+	return filesarray.then(function(value)
 	{
-		var filecontents;
-		var filesarray = readDir(dirpath);
-		for (var i=0; i<filesarray.length; i++)
-		{
-			filecontents.push(readfile(filesarray[i]));
-		}
-		resolve(filecontents);
 		
-		reject(Error("ERROR HAPPENED IN READ DIR FILES"));
-			
-	});
+		for (var i=0; i<value.length; i++)
+		{
+			var fullpath = resolvedPath(dirpath,value[i]);
+			filecontents.push(readfile(fullpath);
+		}
 	
-	return promise; 
+		var done = Promise.all(filecontents);
+	
+		
+		return done;
+	}
+	
+	
 	
 }
 
