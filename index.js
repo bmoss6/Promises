@@ -39,7 +39,7 @@ function resolvedPath(_dirname, filename)
 	
 	var promise = new Promise(function(resolve,reject)
 	{
-		fs.readFile('/etc/passwd', 'utf8', (err, data) => {
+		fs.readFile(filepath, 'utf8', (err, data) => {
 			if (err) 
 			{resolve(Error("Cannot Read File"));
 			}
