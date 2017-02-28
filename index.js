@@ -84,7 +84,7 @@ function resolvedPath(_dirname, filename)
 function readDirFiles(dirpath)
 {
 	
-	var filecontents;
+	var filecontents= [];
 	var filesarray = readDir(dirpath);
 	return filesarray.then(function(value)
 	{
