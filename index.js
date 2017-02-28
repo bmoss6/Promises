@@ -32,7 +32,7 @@ function resolvedPath(_dirname, filename)
 	
 	
 }
-
+export {resolvedPath};
  function readFile(filepath)
 {
 	const fs = require ('fs');
