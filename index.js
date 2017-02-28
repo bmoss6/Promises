@@ -92,7 +92,7 @@ function readDirFiles(dirpath)
 		for (var i=0; i<value.length; i++)
 		{
 			var fullpath = resolvedPath(dirpath,value[i]);
-			filecontents.push(readfile(fullpath);
+			filecontents.push(readfile(fullpath));
 		}
 	
 		var done = Promise.all(filecontents);
