@@ -79,7 +79,7 @@ function resolvedPath(_dirname, filename)
 	
 }
 
-export {resolvedPath};
+
 /*
 function readDirFiles(dirpath)
 {
