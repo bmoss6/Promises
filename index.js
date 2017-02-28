@@ -99,7 +99,7 @@ function readDirFiles(dirpath)
 	
 		
 		return done;
-	}
+	});
 	
 	
 	
