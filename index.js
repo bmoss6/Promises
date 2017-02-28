@@ -80,7 +80,7 @@ function resolvedPath(_dirname, filename)
 }
 
 
-
+/*
 function readDirFiles(dirpath)
 {
 	const fs = require ('fs');
@@ -102,5 +102,5 @@ function readDirFiles(dirpath)
 	return promise; 
 	
 }
-
-export {readDir,readFile,readDirFiles,resolvedPath};
+*/
+export {readDir,readFile,resolvedPath};
