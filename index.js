@@ -23,7 +23,7 @@ Rejects the promise if the directory or a file within it cannot be read.
 Uses the three previous functions and does not create a new Promise.
 */
 
-export function resolvedPath(_dirname, filename)
+function resolvedPath(_dirname, filename)
 {
 	const path = require('path');
 	var done = path.resolve(_dirname, filename);
@@ -33,7 +33,7 @@ export function resolvedPath(_dirname, filename)
 	
 }
 
-export function readFile(filepath)
+ function readFile(filepath)
 {
 	const fs = require ('fs');
 	
@@ -56,8 +56,7 @@ export function readFile(filepath)
 }
 
 
-
-export function readDir(dirpath)
+ function readDir(dirpath)
 {
 	const fs = require ('fs');
 	
@@ -82,7 +81,7 @@ export function readDir(dirpath)
 
 
 
-export function readDirFiles(dirpath)
+function readDirFiles(dirpath)
 {
 	const fs = require ('fs');
 	
@@ -103,3 +102,5 @@ export function readDirFiles(dirpath)
 	return promise; 
 	
 }
+
+export {readDir,readFile,readDirFiles,resolvedPath};
