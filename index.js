@@ -105,3 +105,4 @@ function readDirFiles(dirpath)
 	
 }
 
+// Code derived from https://nodejs.org/api/fs.html
