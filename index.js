@@ -79,7 +79,7 @@ function resolvedPath(_dirname, filename)
 	
 }
 
-
+export {readDir,readFile,resolvedPath};
 /*
 function readDirFiles(dirpath)
 {
@@ -103,4 +103,3 @@ function readDirFiles(dirpath)
 	
 }
 */
-export {readDir,readFile,resolvedPath};
