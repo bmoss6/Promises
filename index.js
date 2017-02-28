@@ -41,7 +41,7 @@ function resolvedPath(_dirname, filename)
 	{
 		fs.readFile(filepath, 'utf8', (err, data) => {
 			if (err) 
-			{resolve(Error("Cannot Read File"));
+			{reject(err);
 			}
 			else
 			{
