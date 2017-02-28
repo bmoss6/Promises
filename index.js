@@ -63,7 +63,7 @@ function resolvedPath(_dirname, filename)
 	var promise = new Promise(function(resolve,reject)
 	{
 		
-	fs.readdir(p, function (err, files) {
+	fs.readdir(dirpath, function (err, files) {
     if (err) {
         reject(Error("Error in Directory"));
     }
