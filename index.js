@@ -95,7 +95,7 @@ function readDirFiles(dirpath)
 		}
 		resolve(filecontents);
 		
-		reject(Error("ERROR HAPPENED IN READ DIR FILES");
+		reject(Error("ERROR HAPPENED IN READ DIR FILES"));
 			
 	});
 	
