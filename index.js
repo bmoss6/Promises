@@ -22,7 +22,7 @@ Rejects the promise if the directory or a file within it cannot be read.
 
 Uses the three previous functions and does not create a new Promise.
 */
-
+var exports = module.exports = {resolvedPath};
 function resolvedPath(_dirname, filename)
 {
 	const path = require('path');
@@ -32,7 +32,7 @@ function resolvedPath(_dirname, filename)
 	
 	
 }
-export {resolvedPath};
+
  function readFile(filepath)
 {
 	const fs = require ('fs');
